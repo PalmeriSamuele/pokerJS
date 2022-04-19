@@ -85,13 +85,12 @@ function playerTime() {
 }
 
 function followMise(id) {
-    liste_joueurs[id.substr(-1)-1][3] -= miseHistorique.substr(-1);
-    pot +=  miseHistorique.substr(-1);
-    console.log(mise);
+    last_mise = miseHistorique.pop();
+    liste_joueurs[id.substr(-1)-1][3] -= last_mise;
+    pot += last_mise;
     console.log(liste_joueurs);
-    miseHistorique.push(mise);    
+    miseHistorique.push(last_mise);    
     console.log(miseHistorique);
-    liste_joueurs[id.substr(-1)-1][3] -= mise;
     pot_tapis.innerHTML = pot.toString();
     liste_joueurs[id.substr(-1)-1][2] = false;
     liste_joueurs[id.substr(-1)][2] = true;
