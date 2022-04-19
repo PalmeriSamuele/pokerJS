@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>Poker</title>
+</head>
+<body>
+
+    <div class="croupier">
+        <button onclick="startGame()">Start</button>
+    </div>
+    <div id="deck"></div>
+    <div id="poker_player1">
+        <div id="joueurs1" class=" joueur">
+            <img src="" alt="">
+            <img src="" alt="">  
+         </div>
+         <img class="ships_poker" src="public/img/ships.png" alt="">
+         <p id="cash1">100</p>
+
+         <div class="control_game">
+            <button id="follow_mise1" onclick="followMise(this.id)">follow</button>
+            <button id="fold_cards1" onclick="foldCards(this.id)">Fold</button>
+            <input type="range" id="mise_cash1" name="mise"
+            min="1" max="100" onclick="miseCash(this.id)">
+            <input for="mise" type="submit">Miser</label>
+    
+        </div>
+    </div>
+    <div id="poker_player2">
+        <div id="joueurs2" class=" joueur">
+            <img src="" alt="">
+            <img src="" alt="">  
+         </div>
+         <img class="ships_poker" src="public/img/ships.png" alt="">
+         <p id="cash2">100</p>
+         <div class="control_game">
+            <button id="follow_mise2" onclick="followMise(this.id)">follow</button>
+            <button id="fold_cards2" onclick="foldCards(this.id)">Fold</button>
+            <input type="range" id="mise_cash2" name="mise"
+            min="1" max="100" onclick="miseCash(this.id)">
+            <label for="volume">Miser</label>
+    
+        </div>
+
+    </div>
+    <div id="poker_player3">
+        <div id="joueurs3" class=" joueur">
+            <img src="" alt="">
+            <img src="" alt="">  
+         </div>
+         <img class="ships_poker" src="public/img/ships.png" alt="">
+         <p id="cash3">100</p>
+         <div class="control_game">
+            <button id="follow_mise3" onclick="followMise(this.id)">follow</button>
+            <button id="fold_cards3" onclick="foldCards(this.id)">Fold</button>
+            <input type="range" id="mise_cash3" name="mise"
+            min="1" max="100" onclick="miseCash(this.id)">
+            <label for="volume">Miser</label>
+    
+        </div>
+
+    </div>
+    <div  id="poker_player4">
+        <div id="joueurs4" class=" joueur">
+            <img src="" alt="">
+            <img src="" alt="">  
+         </div>
+         <img class="ships_poker" src="public/img/ships.png" alt="">
+         <p id="cash4">100</p>
+         <div class="control_game">
+            <button id="follow_mise4" onclick="followMise(this.id)">follow</button>
+            <button id="fold_cards4" onclick="foldCards(this.id)">Fold</button>
+            <input type="range" id="mise_cash4" name="mise"
+            min="1" max="100" onclick="miseCash(this.id)">
+            <label for="volume">Miser</label>
+    
+        </div>
+
+    </div>    
+    <div  id="poker_player5">
+        <div id="joueurs5" class=" joueur">
+            <img src="" alt="">
+            <img src="" alt="">  
+         </div>
+         <img class="ships_poker" src="public/img/ships.png" alt="">
+         <p id="cash5">100</p>
+         <div class="control_game">
+            <button id="follow_mise5" onclick="followMise(this.id)">follow</button>
+            <button id="fold_cards5" onclick="foldCards(this.id)">Fold</button>
+            <input type="range" id="mise_cash5" name="mise"
+            min="1" max="100" onclick="miseCash(this.id)">
+            <label for="volume">Miser</label>
+    
+        </div>
+
+    </div>
+    <div id="tapis_cards">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </div>
+    <div id="pot">
+        <p>0</p>
+    </div>
+ 
+    <div id="table_poker">
+        <img class="table_img" src="public/img/table_de_poker.png" alt="">
+    </div>
+    
+
+
+    <script src="public/js/main.js"></script>
+</body>
+</html>
